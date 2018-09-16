@@ -13,7 +13,7 @@ class OuterAdapterWithDiffUtil(val onBoxClicked: (Box) -> Unit) : ListAdapter<Se
 
 
     override fun areItemsTheSame(p0: Section, p1: Section): Boolean {
-        return p0 == p1
+        return p0.id == p1.id
     }
 
     override fun areContentsTheSame(p0: Section, p1: Section): Boolean {
